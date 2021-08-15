@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title> eWorld </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="Prince Kunzwa"/>
+    <meta name="description" content="online second hand store"/>
+    <meta name="keywords" content="online, ecommerce, shopping, student"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="upload.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- start of header-->
+    <div class:"header" style="text-align: center">
+        <h1> eWorld </h1>
+    </div>
+    
+    <div class="topnav">
+        <ul>
+          <li><a href="My Products.html"> My Prodcts </a></li>
+          <li><a href="Upload.html"> Upload </a></li>
+          <li><a href="Edit.html"> Edit </a></li>
+          <li><a href="About.html"> About </a></li>
+        </ul>
+
+
+   </div>
+   <h1 style="text-align:center">Upload Product</h1>
+  
+   <div class="row">
+        
+    
+        <div class="column">
+                <div class="module">
+                        <form class="form" enctype="multipart/form-data" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>
+                          <div class="alert alert-error"></div>
+                          <input type="text" placeholder="Product Name" name="productname" required />
+                          <input type="text" placeholder="Product description" name="productdescription" required />
+                          <input type="text" placeholder="Product Category" name="productcategory" required />
+                          <input type="text" placeholder="Key Words" name="keywords" required />
+                          <input type="text" placeholder="Price" name="price" required />
+                          <input type="text" placeholder="Video link" name="video" required />
+                          <input type="text" placeholder="Image link" name="image" required />
+                          <input type="submit" value="upload" name="upload" class="btn btn-block btn-primary" />
+                        </form>
+                      </div>
+
+
+        </div>
+        
+        
+        
+        
+        
+        <div class="column">
+                <div class="module">
+                        <form class="form" enctype="multipart/form-data" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>
+                          <div class="alert alert-error"></div>
+                          <input type="text" placeholder="Product Name" name="productname" required />
+                          <input type="text" placeholder="Product description" name="productdescription" required />
+                          <input type="text" placeholder="Product Category" name="productcategory" required />
+                          <input type="text" placeholder="Key Words" name="keywords" required />
+                          <input type="text" placeholder="Price" name="price" required />
+                          <input type="text" placeholder="Video link" name="video" required />
+                          <input type="text" placeholder="Image link" name="image" required />
+                          <input type="submit" value="upload" name="upload" class="btn btn-block btn-primary" />
+                        </form>
+                      </div>
+
+        </div>
+    
+    
+    
+    </div>
+
+
+    
+<?php 
+// setting variable and setting to empty values
+$product_name =
+
+
+// defining variables and setting to empty values
+echo "Product Name: " . $_POST["product_name"] . "<br>";
+echo "Product Description: " . $_POST["product_description"] . "<br>";
+echo "Product Category: " . $_POST["product_category"] . "<br>";
+echo "Keywords: " . $_POST["keywords"] . "<br>";
+echo "Price: " . $_POST["price"] . "<br>";
+echo "Video URL: " . $_POST["video_url"] . "<br>";
+echo "Picture URL: " . $_POST["image_url"] . "<br>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+        
+
+    
+    
+
+        
+            
+
+
+
+
+
+
+
+
+        
+
+
+    <div style="margin-bottom: 450px;"></div>
+        <hr>
+        <!--start of the footer -->
+    <footer class="footer">
+                <p>Copyright &copy; 2019, eWorld
+                    
+                <button> <a href="About.html"> Contact </a> </button> 
+                </p>
+            </footer>
+</body>
+</html>
